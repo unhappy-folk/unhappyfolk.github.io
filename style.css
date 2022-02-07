@@ -1,6 +1,7 @@
 body {
   background-color: #110c11;
   font-family: 'Gideon Roman', cursive;
+  /* font-family: "Cutive Mono", monospace; */
   display: flex;
   flex-direction: column;
   justify-content: center;
