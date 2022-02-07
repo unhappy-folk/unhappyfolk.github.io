@@ -22,9 +22,15 @@ body {
   justify-content: center;
 }
 
-.frame p {
+.title {
   font-size: xx-large;
   font-weight: bolder;
+  width: max-content;
+}
+
+.subtitle {
+  font-size: x-large;
+  font-weight: bold;
   width: max-content;
 }
 
