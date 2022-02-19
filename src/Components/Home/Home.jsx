@@ -6,7 +6,7 @@ function Home() {
             <div class="frame">
                 <img src={logo} alt=""/>
               <p class="title">The Unhappy Folk</p>
-              <p class="subtitle">Timeless, Placeless Projects.</p>
+              <p class="subtitle">Timeless, Placeless.</p>
             </div>
         </div>
     ); 
