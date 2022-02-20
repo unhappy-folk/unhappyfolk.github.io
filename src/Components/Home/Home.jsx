@@ -1,4 +1,4 @@
-import logo  from '../../assets/compressed-logo.svg';
+import logo  from '../../assets/logo.svg';
 
 function Home() {
     return(
