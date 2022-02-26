@@ -31,10 +31,75 @@ body {
 .subtitle {
   font-size: large;
   font-weight: bold;
-  width: max-content;
+  width: max-content; 
 }
 
 .frame img {
   width: 70vw;
-  height: 60vh;
+  height: 15vh;
+}
+
+.quote-container {
+  background-color: #525252;
+  border-radius: 0.5rem;
+  width: max-content;
+  height: max-content;
+  padding: 3vh;
+  padding-top: 0;
+}
+
+.quote {
+  font-size: large;
+  font-weight: bold;
+}
+
+.quote-ref {
+  float: left;
+  font-style: italic;
+  text-decoration: none;
+  color: #b1922d;
+}
+
+.languages-bar {
+  display: flex;
+}
+
+.language-btn {
+  background-color: transparent;
+  border-color: transparent;
+  color: #ecc953;
+  transition: 0.3s;
+  padding: 0.3rem;
+  width: 100%;
+}
+
+.active-language-btn {
+  border-color: transparent;
+  background-color: #3d3d3d;
+  color: #ecc953;
+  border-bottom-color: #ecc953;
+  padding: 0.3rem;
+  width: 100%;
+}
+
+.language-btn:hover {
+  background-color: #3d3d3d;
+}
+
+a:hover {
+  color: #000000;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 550px){
+  .quote-container {
+    width: 237%;
+    padding: 0.2rem;
+    padding-top: 0%;
+    border-radius: 0.25rem;
+  }
+  
+  .languages-bar {
+    width: initial;
+  }
 }
