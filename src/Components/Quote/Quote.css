@@ -1,0 +1,37 @@
+.quote-container {
+    background-color: #7e7d7d;
+    width: 105%;
+    height: 20vh;
+    border-radius: 0.5rem;
+    padding-bottom: 2rem;
+    overflow-y: scroll;
+    scrollbar-color: #e0bb3f  transparent;
+}
+
+.quote {
+    font-size: larger;
+}
+
+.quote-ref {
+    text-decoration: none;
+    color: #e0bb3f;
+}
+
+.fade-in {
+    animation: fadeIn 2s;
+    position: sticky;
+    position: -webkit-sticky;   
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease;
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 0;
+}
