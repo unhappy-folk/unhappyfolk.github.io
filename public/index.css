@@ -38,51 +38,12 @@ body {
   width: 30%;
 }
 
-.language-btn {
-  background-color: transparent;
-  border-color: transparent;
-  color: #ecc953;
-  transition: 0.3s;
-  padding: 0.3rem;
-  width: 100%;
-  font-size: large;
-}
-
-.active-language-btn {
-  border-color: transparent;
-  background-color: #3d3d3d;
-  color: #ecc953;
-  border-bottom-color: #ecc953;
-  padding: 0.3rem;
-  width: 100%;
-  font-size: large;
-}
-
-.language-btn:hover {
-  background-color: #3d3d3d;
-}
-
 a:hover {
   color: #000000;
   transition: 0.3s;
 }
 
 @media screen and (max-width: 950px){
-  .quote-container {
-    width: 237%;
-    padding: 0.2rem;
-    padding-top: 0%;
-    border-radius: 0.25rem;
-  }
-
-  .quote {
-    font-size: larger;
-  }
-  
-  .languages-bar {
-    width: initial;
-  }
-
   .language-btn {
     font-size: small;
   }
