@@ -1,3 +1,3 @@
 import { createContext } from "react";
 
-export const languageContext = createContext('ar');
+export const LanguageContext = createContext('ar');
