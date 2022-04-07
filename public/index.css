@@ -23,17 +23,36 @@ body {
 }
 
 .title {
-  font-size: xx-large;
+  font-size: larger;
   font-weight: bolder;
   width: max-content;
 }
 
 .subtitle {
-  font-size: large;
+  font-size: medium;
   font-weight: bold;
-  width: max-content;
+  width: max-content; 
 }
 
 .frame img {
   width: 30%;
+}
+
+a:hover {
+  color: #000000;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 950px){
+  .language-btn {
+    font-size: small;
+  }
+
+  .active-language-btn {
+    font-size: small;
+  }
+
+  .frame img {
+    width: 25vh;
+  }
 }

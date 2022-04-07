@@ -1,24 +1,21 @@
 import logo from "../../assets/logo.svg";
-import { MESSAGES } from "../../Quotes/Schema";
+
+//Import another components
+import Quote from "../Quote/Quote";
+
+import { LanguageContext } from '../../LanguageContext';
+
 function Home() {
-  return (
-    <div>
-      <div class="frame">
-        <img src={logo} alt="" />
-        <p class="title">The Unhappy Folk</p>
-        <p class="subtitle">Timeless, Placeless.</p>
-        <p class="subtitle">
-          {MESSAGES[0].text.en.split("\n").map((line) => (
-            <p>{line}</p>
-          ))}
-        </p>
-        <p class="subtitle">
-          {MESSAGES[0].text.en.split("\n").map((line) => (
-            <p>{line}</p>
-          ))}
-        </p>
+
+  return ( 
+      <div>
+        <div class="frame">
+            <img src={logo} alt=""/>
+          <p class="title">The Unhappy Folk</p>
+          <p class="subtitle">Timeless, Placeless.</p>
+          <Quote/>
+        </div>
       </div>
-    </div>
   );
 }
 
