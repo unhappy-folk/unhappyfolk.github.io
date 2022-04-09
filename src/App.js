@@ -8,7 +8,7 @@ import { MESSAGES } from './Content/Quotes/Schema';
 function App() {
 
   const [language, setLanguage] = useState('ar');
-  const [quote, setQuote] = useState(MESSAGES[0]);
+  const [quote, setQuote] = useState(MESSAGES[1]);
 
   return (
     <LanguageContext.Provider value={[language, setLanguage]}>
