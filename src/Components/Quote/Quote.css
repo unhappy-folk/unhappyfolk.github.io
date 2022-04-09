@@ -1,20 +1,30 @@
-.quote-container {
-    background-color: #7e7d7d;
+.container {
     width: 105%;
-    height: 20vh;
-    border-radius: 0.5rem;
+    height: 33vh;
     padding-bottom: 2rem;
-    overflow-y: scroll;
+    
+}
+
+.quote-container {
+    border-radius: 0.5rem;
     scrollbar-color: #e0bb3f  transparent;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .quote {
-    font-size: larger;
+    font-size: x-large;
+    height: 15vh;
+    overflow-y: scroll;
 }
 
 .quote-ref {
     text-decoration: none;
     color: #e0bb3f;
+    font-size: large;
+
 }
 
 .fade-in {
