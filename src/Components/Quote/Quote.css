@@ -2,7 +2,7 @@
     width: 105%;
     height: 33vh;
     padding-bottom: 2rem;
-    
+
 }
 
 .quote-container {
@@ -24,7 +24,10 @@
     text-decoration: none;
     color: #e0bb3f;
     font-size: large;
+}
 
+.quote-ref:hover {
+    color: #ae8b19;
 }
 
 .fade-in {
