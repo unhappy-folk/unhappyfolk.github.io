@@ -1,5 +1,5 @@
 //Import from react
-import { useEffect, useContext, useState, useMemo    } from 'react';
+import { useEffect, useContext, useState, useRef} from 'react';
 
 //Import from content
 import { MESSAGES } from '../../Content/Quotes/Schema'; 
@@ -21,8 +21,14 @@ function Quote() {
     const [fade, setFade] = useState('fade-in');
     const [isShown, setIsShown] = useState(true);
 
+    const firstRender = useRef(true);
+
     useEffect(() => {
         setIsShown(true);
+        if(firstRender.current) {
+            firstRender.current = false;
+            return;
+        }
         setTimeout(() => {
             setCurrentQuote(MESSAGES[Math.floor(Math.random() * MESSAGES.length)]);
             setFade('fade-in');
