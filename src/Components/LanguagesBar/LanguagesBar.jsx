@@ -20,7 +20,8 @@ function LanguagesBar() {
         if(!currentQuote.text[`${currentLanguage}`] ) { 
             LANGUAGES.map((language) => {
                 if(currentQuote.text[`${language.value}`]) {
-                    setCurrentLanguage(language.value)
+                    setCurrentLanguage(language.value);
+                    return;
                 } 
             })
         }
