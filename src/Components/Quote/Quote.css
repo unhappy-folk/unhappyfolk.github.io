@@ -1,5 +1,5 @@
 .container {
-    width: 105%;
+    width: 110%;
     height: 33vh;
     padding-bottom: 2rem;
 
@@ -48,3 +48,31 @@
     position: -webkit-sticky;
     bottom: 0;
 }
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 200%;
+    }
+
+    .quote {
+        font-size: medium;
+    }
+    
+    .quote-ref {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 180%;
+    }
+
+    .quote {
+        font-size: large;
+    }
+    
+    .quote-ref {
+        font-size: medium;
+    }
+  }

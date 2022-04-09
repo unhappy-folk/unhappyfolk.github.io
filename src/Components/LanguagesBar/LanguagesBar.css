@@ -33,3 +33,21 @@
   width: 100%;
   border-radius: 0.5rem;
 }
+
+@media screen and (max-width: 800px) {
+  .language-btn {
+    font-size: small;
+  }
+  .active-language-btn {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .language-btn {
+    font-size: medium;
+  }
+  .active-language-btn {
+    font-size: medium;
+  }
+}
