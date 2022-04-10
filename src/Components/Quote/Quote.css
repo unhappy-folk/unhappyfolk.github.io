@@ -16,8 +16,9 @@
 
 .quote {
     font-size: x-large;
-    height: 15vh;
+    height: 18vh;
     overflow-y: scroll;
+    width: fit-content;
 }
 
 .quote-ref {
