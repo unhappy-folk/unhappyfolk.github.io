@@ -16,17 +16,6 @@ function LanguagesBar() {
     const [currentLanguage, setCurrentLanguage] = useContext(LanguageContext);
     const [currentQuote, setCurrentQuote] = useContext(QuoteContext);
 
-    useEffect(() => {
-        if(!currentQuote.text[`${currentLanguage}`] ) { 
-            LANGUAGES.map((language) => {
-                if(currentQuote.text[`${language.value}`]) {
-                    setCurrentLanguage(language.value);
-                    return;
-                } 
-            })
-        }
-    }, [currentQuote])
-
     const languagesButtons = LANGUAGES.map((language) => {
 
         return (

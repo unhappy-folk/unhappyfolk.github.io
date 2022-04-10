@@ -3,6 +3,7 @@ import { useEffect, useContext, useState, useRef} from 'react';
 
 //Import from content
 import { MESSAGES } from '../../Content/Quotes/Schema'; 
+import LANGUAGES from '../../Content/Languages';
 
 //Import other components
 import LanguagesBar from '../LanguagesBar/LanguagesBar';
@@ -22,6 +23,17 @@ function Quote() {
     const [isShown, setIsShown] = useState(true);
 
     const firstRender = useRef(true);
+
+    useEffect(() => {
+        if(!currentQuote.text[`${currentLanguage}`] ) { 
+            LANGUAGES.map((language) => {
+                if(currentQuote.text[`${language.value}`]) {
+                    setCurrentLanguage(language.value);
+                    return;
+                } 
+            })
+        }
+    }, [currentQuote])
 
     useEffect(() => {
         setIsShown(true);
@@ -48,7 +60,11 @@ function Quote() {
             <div className={`quote-container`}>
                 {currentQuote.text ? 
                 <div className={`${fade}`}>
-                    <p className="quote">{currentQuote.text[`${currentLanguage}`]}</p>
+                    <p className='quote'>
+                    {currentQuote.text[`${currentLanguage}`] && currentQuote.text[`${currentLanguage}`].split('\n').map((line) => (
+                        <p>{line}</p>
+                    ))}
+                    </p>
                     <a className="quote-ref" href={currentQuote.src}>{currentQuote.author[`${currentLanguage}`]}</a>
                 </div>
                 : ''}
