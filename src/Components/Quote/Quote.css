@@ -24,6 +24,7 @@
     text-decoration: none;
     color: #e0bb3f;
     font-size: large;
+    text-decoration: underline;
 }
 
 .quote-ref:hover {
