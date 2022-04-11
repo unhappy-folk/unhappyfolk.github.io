@@ -31,7 +31,8 @@
   z-index: 50;
   background-color: #575757;
   width: 100%;
-  border-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 @media screen and (max-width: 800px) {
