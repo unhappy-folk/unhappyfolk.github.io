@@ -1,7 +1,12 @@
+@font-face {
+  font-family: "ArabicType";
+  src: url("fonts/IBMPlexSansArabic-Regular.ttf");
+  unicode-range: U+0600-06FF;
+}
+
 body {
   background-color: #110c11;
-  font-family: 'Gideon Roman', cursive;
-  font-family: 'Cormorant Garamond', serif; 
+  font-family: "ArabicType", "Cormorant Garamond", serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,7 +36,7 @@ body {
 .subtitle {
   font-size: large;
   font-weight: bold;
-  width: max-content; 
+  width: max-content;
 }
 
 .frame img {
@@ -43,7 +48,7 @@ a:hover {
   transition: 0.3s;
 }
 
-@media screen and (max-width: 950px){
+@media screen and (max-width: 950px) {
   .language-btn {
     font-size: small;
   }
