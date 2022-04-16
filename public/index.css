@@ -1,7 +1,13 @@
 @font-face {
   font-family: "ArabicType";
-  src: url("fonts/IBMPlexSansArabic-Regular.ttf");
+  src: url("fonts/AlQalamQuranMajeed.ttf");
   unicode-range: U+0600-06FF;
+}
+/* Exclude Arabic numbers; AlQalamQuranMajeed doesn't support them*/
+@font-face {
+  font-family: "ArabicType";
+  src: local("Arial");
+  unicode-range: U+0660-0669;
 }
 
 body {
