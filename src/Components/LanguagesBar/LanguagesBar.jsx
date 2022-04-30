@@ -1,8 +1,9 @@
 //Import from react
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 
 //Import from context
-import { LanguageContext } from "../../LanguageContext";
+import { LanguageContext } from "../../Context";
+import { QuoteContext } from '../../Context';
 
 //Import constants
 import LANGUAGES from '../../Content/Languages';
@@ -13,11 +14,15 @@ import './LanguagesBar.css'
 function LanguagesBar() {
 
     const [currentLanguage, setCurrentLanguage] = useContext(LanguageContext);
+    const [currentQuote, setCurrentQuote] = useContext(QuoteContext);
 
     const languagesButtons = LANGUAGES.map((language) => {
 
         return (
-        <button className={ language.value == currentLanguage ? 'active-language-btn' : 'language-btn'} onClick={() => handleClick(language)}>
+        <button disabled={!currentQuote.text[`${language.value}`] ? 'active-language disabled' : ''} 
+                className={ language.value == currentLanguage ? 'active-language-btn' : 'language-btn'}
+                onClick={() => handleClick(language)}
+        >
             {language.spelling}
         </button>
         )

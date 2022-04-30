@@ -1,7 +1,18 @@
+@font-face {
+  font-family: "ArabicType";
+  src: url("fonts/AlQalamQuranMajeed.ttf");
+  unicode-range: U+0600-06FF;
+}
+/* Exclude Arabic numbers; AlQalamQuranMajeed doesn't support them*/
+@font-face {
+  font-family: "ArabicType";
+  src: local("Arial");
+  unicode-range: U+0660-0669;
+}
+
 body {
   background-color: #110c11;
-  font-family: 'Gideon Roman', cursive;
-  /* font-family: "Cutive Mono", monospace; */
+  font-family: "ArabicType", "Cormorant Garamond", serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,15 +34,15 @@ body {
 }
 
 .title {
-  font-size: larger;
+  font-size: xx-large;
   font-weight: bolder;
   width: max-content;
 }
 
 .subtitle {
-  font-size: medium;
+  font-size: large;
   font-weight: bold;
-  width: max-content; 
+  width: max-content;
 }
 
 .frame img {
@@ -43,7 +54,7 @@ a:hover {
   transition: 0.3s;
 }
 
-@media screen and (max-width: 950px){
+@media screen and (max-width: 950px) {
   .language-btn {
     font-size: small;
   }
