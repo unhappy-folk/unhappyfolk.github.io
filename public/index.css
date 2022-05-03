@@ -39,6 +39,7 @@ body {
   font-size: xx-large;
   font-weight: bolder;
   width: max-content;
+  margin-bottom: 0;
 }
 
 .subtitle {
