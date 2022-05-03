@@ -1,20 +1,35 @@
-.quote-container {
-    background-color: #7e7d7d;
-    width: 105%;
-    height: 20vh;
-    border-radius: 0.5rem;
+.container {
+    width: 110%;
+    height: 33vh;
     padding-bottom: 2rem;
-    overflow-y: scroll;
+
+}
+
+.quote-container {
+    border-radius: 0.5rem;
     scrollbar-color: #e0bb3f  transparent;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .quote {
-    font-size: larger;
+    font-size: x-large;
+    height: 18vh;
+    overflow-y: scroll;
+    width: fit-content;
 }
 
 .quote-ref {
     text-decoration: none;
     color: #e0bb3f;
+    font-size: large;
+    text-decoration: underline;
+}
+
+.quote-ref:hover {
+    color: #ae8b19;
 }
 
 .fade-in {
@@ -35,3 +50,31 @@
     position: -webkit-sticky;
     bottom: 0;
 }
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 200%;
+    }
+
+    .quote {
+        font-size: medium;
+    }
+    
+    .quote-ref {
+        font-size: small;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200) {
+    .container {
+        width: 180%;
+    }
+
+    .quote {
+        font-size: large;
+    }
+    
+    .quote-ref {
+        font-size: medium;
+    }
+  }

@@ -35,13 +35,13 @@ body {
 }
 
 .title {
-  font-size: larger;
+  font-size: xx-large;
   font-weight: bolder;
   width: max-content;
 }
 
 .subtitle {
-  font-size: medium;
+  font-size: large;
   font-weight: bold;
   width: max-content;
 }

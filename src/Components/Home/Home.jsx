@@ -3,8 +3,6 @@ import logo from "../../assets/logo.svg";
 //Import another components
 import Quote from "../Quote/Quote";
 
-import { LanguageContext } from '../../LanguageContext';
-
 function Home() {
 
   return ( 
