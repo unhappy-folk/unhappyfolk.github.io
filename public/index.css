@@ -3,17 +3,11 @@
   src: url("fonts/Mirza-Medium.ttf");
   unicode-range: U+0600-06FF;
 }
-/* Exclude Arabic numbers; AlQalamQuranMajeed doesn't support them*/
-/* @font-face {
-  font-family: "ArabicType";
-  src: url('https://fonts.cdnfonts.com/s/29105/ARIAL.woff') format('woff');
-  unicode-range: U+0660-0669;
-} */
+
 
 body {
   background-color: #110c11;
-  font-family: "ArabicType", "Gideon Roman", cursive;
-  /* font-family: "Cutive Mono", monospace; */
+  font-family: "ArabicType", "Cormorant Garamond", cursive;
   display: flex;
   flex-direction: column;
   justify-content: center;
