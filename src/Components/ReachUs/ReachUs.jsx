@@ -2,30 +2,32 @@
 import linkedInLogo from '../../assets/linkedin-logo.svg';
 import githubLogo from '../../assets/github-logo.svg';
 import instagramLogo from '../../assets/instagram-logo.svg';
-import mailLogo from '../../assets/mail-logo.svg';
-import telegramLogo from '../../assets/telegram-logo.svg';
+import telegramLogo from '../../assets/telegram-logo.svg'
+
+//Import style
+import './ReachUs.css';
 
 function ReachUs() {
     return (
-        <div style={{width: '100%'}}>
+        <div>
             <a href='https://www.linkedin.com/newsletters/the-unhappy-folk-6899718410507206656/'>
-                <img src={linkedInLogo} style={{width: '5%'}}/>
+                <img src={linkedInLogo} className='logo'/>
             </a>
             {' '}
             <a href=' https://t.me/unhappyfolk'>
-                <img src={telegramLogo} style={{width: '5%'}}/>
+                <img src={telegramLogo} className='logo'/>
             </a>
             {' '}
             <a href=' https://www.instagram.com/unhappyfolk/'>
-                <img src={instagramLogo} style={{width: '5%'}}/>
+                <img src={instagramLogo} className='logo'/>
             </a>
             {' '} 
             <a href="mailto:msg@uhappyfolk.org">
-                <img src={mailLogo} style={{width: '5%'}}/>
+                <img src="https://img.icons8.com/material/38/ceaa37/marked-mail.png"/>
             </a>
             {' '} 
             <a href="https://github.com/unhappyfolk">
-                <img src={githubLogo} style={{width: '5%'}}/>
+                <img src={githubLogo} className='logo'/>
             </a>
             <br/>
             <br/>
