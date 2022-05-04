@@ -2,6 +2,7 @@ import logo from "../../assets/logo.svg";
 
 //Import another components
 import Quote from "../Quote/Quote";
+import ReachUs from "../ReachUs/ReachUs";
 
 function Home() {
 
