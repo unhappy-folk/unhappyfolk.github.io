@@ -1,6 +1,6 @@
 .container {
-    width: 110%;
-    height: 33vh;
+    width: 40vw;
+    /* height: 40%; */
     padding-bottom: 2rem;
 
 }
@@ -16,7 +16,8 @@
 
 .quote {
     font-size: x-large;
-    height: 18vh;
+    height: 40%;
+    max-height: 22vh;
     overflow-y: scroll;
     width: fit-content;
 }

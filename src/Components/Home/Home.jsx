@@ -2,17 +2,17 @@ import logo from "../../assets/logo.svg";
 
 //Import another components
 import Quote from "../Quote/Quote";
-import ReachUs from "../ReachUs/ReachUs";
 
 function Home() {
 
   return ( 
-      <div>
+      <div style={{minHeight: "calc(100vh - 12%)", backgroundColor: '#141414'}}>
         <div class="frame">
             <img src={logo} alt=""/>
-          <p class="title">The Unhappy Folk</p>
-          <p class="subtitle">Timeless, Placeless.</p>
-          <ReachUs/>
+          <div style={{margin: 'auto', textAlign: 'center', marginBottom: '2rem', lineHeight: "50%"}}>
+            <p class="title">The Unhappy Folk</p>
+            <p class="subtitle">Timeless, Placeless.</p>
+          </div>
           <Quote/>
         </div>
       </div>
