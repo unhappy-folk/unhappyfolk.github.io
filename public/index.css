@@ -1,22 +1,8 @@
 @font-face {
   font-family: "ArabicType";
-<<<<<<< HEAD
   src: url("fonts/Mirza-Medium.ttf");
   unicode-range: U+0600-06FF;
 }
-
-=======
-  src: url("fonts/AlQalamQuranMajeed.ttf");
-  /* unicode-range: U+0600-06FF; */
-}
-
-/* Exclude Arabic numbers; AlQalamQuranMajeed doesn't support them*/
-/* @font-face {
-  font-family: "ArabicType";
-  src: url('https://fonts.cdnfonts.com/s/29105/ARIAL.woff');
-  unicode-range: U+0660-0669;
-} */
->>>>>>> Merge branch 'Quotes-UI' of github.com:unhappyfolk/unhappyfolk.github.io into Quotes-UI
 
 body {
   background-color: #110c11;
