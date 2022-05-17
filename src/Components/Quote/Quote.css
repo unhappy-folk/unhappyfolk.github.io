@@ -1,80 +1,92 @@
 .container {
-    width: 110%;
-    height: 33vh;
-    padding-bottom: 2rem;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  /* height: 40%; */
+  padding-bottom: 2rem;
 }
 
 .quote-container {
-    border-radius: 0.5rem;
-    scrollbar-color: #e0bb3f  transparent;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+  border-radius: 0.5rem;
+  scrollbar-color: #e0bb3f transparent;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .quote {
-    font-size: x-large;
-    height: 18vh;
-    overflow-y: scroll;
-    width: fit-content;
+  font-size: x-large;
+  height: 40%;
+  max-height: 22vh;
+  overflow-y: scroll;
+  width: fit-content;
 }
 
 .quote-ref {
-    text-decoration: none;
-    color: #e0bb3f;
-    font-size: large;
-    text-decoration: underline;
+  text-decoration: none;
+  color: #e0bb3f;
+  font-size: large;
+  text-decoration: underline;
+}
+
+.quote-ref p {
+  text-align: center;
 }
 
 .quote-ref:hover {
-    color: #ae8b19;
+  color: #ae8b19;
 }
 
 .fade-in {
-    animation: fadeIn 2s;
-    position: sticky;
-    position: -webkit-sticky;   
+  animation: fadeIn 2s;
+  position: sticky;
+  position: -webkit-sticky;
 }
 
 @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .fade-out {
-    opacity: 0;
-    transition: opacity 1s ease;
-    position: sticky;
-    position: -webkit-sticky;
-    bottom: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0;
 }
 
 @media screen and (max-width: 800px) {
-    .container {
-        width: 200%;
-    }
+  .container {
+    width: 200%;
+  }
 
-    .quote {
-        font-size: medium;
-    }
-    
-    .quote-ref {
-        font-size: small;
-    }
+  .quote {
+    font-size: medium;
+  }
+
+  .quote-ref {
+    font-size: small;
+  }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1200) {
-    .container {
-        width: 180%;
-    }
-
-    .quote {
-        font-size: large;
-    }
-    
-    .quote-ref {
-        font-size: medium;
-    }
+  .container {
+    width: 180%;
   }
+
+  .quote {
+    font-size: large;
+  }
+
+  .quote-ref {
+    font-size: medium;
+  }
+}

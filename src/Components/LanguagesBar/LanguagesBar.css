@@ -1,16 +1,16 @@
 .language-btn {
-    background-color: transparent;
-    border-color: transparent;
-    color: #ecc953;
-    transition: 0.3s;
-    padding: 0.3rem;
-    font-size: large;
+  background-color: transparent;
+  border-color: transparent;
+  color: #ecc953;
+  transition: 0.3s;
+  padding: 0.3rem;
+  font-size: large;
 }
 
 .language-btn:disabled {
   opacity: 0.4;
 }
-  
+
 .active-language-btn {
   background-color: #2c2b2b;
   border-color: transparent;
@@ -20,17 +20,21 @@
   font-size: large;
   border-bottom-color: #ecc953;
 }
-  
+
 .language-btn:hover {
   background-color: #3d3d3d;
 }
 
 .languages-bar {
-  position: sticky;
-  position: -webkit-sticky;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  /* position: sticky; */
+  /* position: -webkit-sticky; */
   z-index: 50;
   background-color: #575757;
-  width: 100%;
+  width: 50%;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
