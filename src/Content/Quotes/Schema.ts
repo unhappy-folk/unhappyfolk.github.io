@@ -92,7 +92,7 @@ export const MESSAGES: Array<Message> = [
       en: "Surah AL-A'la",
     },
     text: {
-      ar: "﴾بَلْ تُؤْثِرُونَ ٱلْحَيَوٰةَ ٱلدُّنْيَا﴿ ١٦ ﴾ وَٱلْـَٔاخِرَةُ خَيْرٌۭ وَأَبْقَىٰٓ﴿ ١٧",
+      ar: "﴾بَلْ تُؤْثِرُونَ ٱلْحَيَوٰةَ ٱلدُّنْيَا﴿١٦﴾ وَٱلْـَٔاخِرَةُ خَيْرٌۭ وَأَبْقَىٰٓ﴿١٧",
       en: "But you ˹deniers only˺ prefer the life of this world,﴾16﴿ even though the Hereafter is far better and more lasting.﴾17﴿ ",
     },
   },
@@ -192,5 +192,4 @@ export const MESSAGES: Array<Message> = [
       en: null,
     },
   },
-  
 ];
