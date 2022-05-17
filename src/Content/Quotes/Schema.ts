@@ -20,7 +20,7 @@ export const MESSAGES: Array<Message> = [
       ar: null,
     },
     text: {
-      en: "Uncounted leagues away it lies from here....\n And foam there flowers upon the sea\n by cliffs of crystal carven clear\n on shining beaches flowing free",
+      en: "Uncounted leagues away it lies from here\n And foam there flowers upon the sea\n by cliffs of crystal carven clear\n on shining beaches flowing free",
       ar: null,
     },
   },
@@ -188,7 +188,7 @@ export const MESSAGES: Array<Message> = [
       en: "Amin Al-Gendy",
     },
     text: {
-      ar: "ۚوَمـا مِـن كـاتِـبٍ إِلا سَـيـفني **** وَيَبقي الدَهر ما كَتَبتَ يَداه\n فَـلا تَـكـتُـب بِـيَـدك غَير شَيءٍ **** يَـسـرك في القِيامة إِن تَراه",
+      ar: "ۚوَمـا مِـن كـاتِـبٍ إِلا سَـيـفني وَيَبقي الدَهر ما كَتَبتَ يَداه\n فَـلا تَـكـتُـب بِـيَـدك غَير شَيءٍ يَـسـرك في القِيامة إِن تَراه",
       en: null,
     },
   },

@@ -11,7 +11,7 @@ body {
 }
 
 #root {
-  background-color: #141414;
+  background-color: #070503;
   font-family: "ArabicType", "Cormorant Garamond", cursive;
   height: 100vh;
   width: 100vw;
@@ -27,7 +27,7 @@ body {
   max-width: 60vw;
   color: #ceaa37;
   margin: auto;
-  min-height: calc(100vh - 12%);
+  min-height: calc(100vh - 18%);
 }
 
 .title {

@@ -10,7 +10,7 @@ function Footer(props) {
         alignItems: "center",
         backgroundColor: "#110c11",
         padding: "1rem",
-        height: "12%",
+        height: "18%",
       }}
     >
       <ReachUs />

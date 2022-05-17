@@ -57,26 +57,22 @@ function Quote() {
   return (
     <div className="container">
       <LanguagesBar />
-      <div className={`quote-container`}>
-        {currentQuote.text ? (
-          <div className={`${fade}`}>
-            <p
-              className="quote"
-              style={{ textAlign: isRTL(currentLanguage) ? "right" : "left" }}
-            >
-              {currentQuote.text[`${currentLanguage}`] &&
-                currentQuote.text[`${currentLanguage}`]
-                  .split("\n")
-                  .map((line) => <p>{line}</p>)}
-            </p>
-            <a target="_blank" className="quote-ref" href={currentQuote.src}>
-              <p>{currentQuote.author[`${currentLanguage}`]}</p>
-            </a>
-          </div>
-        ) : (
-          ""
-        )}
-      </div>
+      {currentQuote.text && (
+        <div className={`quote-container`}>
+          <p
+            className={`${fade} quote`}
+            style={{ textAlign: isRTL(currentLanguage) ? "right" : "left" }}
+          >
+            {currentQuote.text[`${currentLanguage}`] &&
+              currentQuote.text[`${currentLanguage}`]
+                .split("\n")
+                .map((line) => <p>{line}</p>)}
+          </p>
+          <a target="_blank" className="quote-ref" href={currentQuote.src}>
+            <p>{currentQuote.author[`${currentLanguage}`]}</p>
+          </a>
+        </div>
+      )}
     </div>
   );
 }
