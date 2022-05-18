@@ -1,5 +1,6 @@
 {
-  "name": "x",
+  "name": "org.unhappyfolk",
+  "homepage": "https://unhappyfolk.org",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
