@@ -8,6 +8,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  position: "relative",
 }
 
 #root {
@@ -18,35 +19,44 @@ body {
   overflow-y: scroll;
 }
 
+a {
+  /* text-decoration: none; */
+color: #e0bb3f;
+}
+
+
+a:hover {
+  color: #ae8b19;
+  transition: 0.3s;
+}
+
 .home {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   flex: 1 1 auto;
-  max-width: 60vw;
+  /* max-width: 80vw; */
   color: #ceaa37;
   margin: auto;
-  min-height: calc(100vh - 18%);
+  padding: 1.6%;
+  /* min-height: calc(100vh - 18%); */
 }
 
 .title {
   font-size: xx-large;
   font-weight: bolder;
+  color: #ae8b19;
 }
 
 .subtitle {
   font-size: x-large;
   font-weight: bold;
+  color: #e0bb3f;
 }
 
 .home img {
   width: 15vw;
-}
-
-a:hover {
-  color: #000000;
-  transition: 0.3s;
 }
 
 @media screen and (max-width: 768px) {

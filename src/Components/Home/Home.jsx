@@ -14,7 +14,16 @@ function Home() {
           alignItems: "center",
         }}
       >
-        <img src={logo} alt="logo" />
+        <img
+          src={logo}
+          alt="logo"
+          style={{
+            width: "24%",
+            height: "32%",
+            marginBottom: 12,
+          }}
+        />
+
         <div
           style={{
             margin: "auto",
@@ -24,7 +33,15 @@ function Home() {
           }}
         >
           <p className="title">The Unhappy Folk</p>
-          <p className="subtitle">Timeless, Placeless.</p>
+          <br />
+
+          {/* <p className="subtitle">Timeless, Placeless.</p> */}
+          <p className="subtitle">
+            Our Latest Entry: &nbsp;
+            <a target="_blank" href="https://blog.unhappyfolk.org">
+              Tongues of Flame
+            </a>
+          </p>
         </div>
       </div>
       <Quote />

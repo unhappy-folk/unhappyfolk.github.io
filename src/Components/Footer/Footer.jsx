@@ -4,13 +4,16 @@ function Footer(props) {
   return (
     <div
       style={{
+        position: "absolute",
+        bottom: 0,
+        left: 0,
+        width: "100%",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "#110c11",
-        padding: "1rem",
-        height: "18%",
+        height: "16%",
       }}
     >
       <ReachUs />

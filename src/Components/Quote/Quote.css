@@ -17,15 +17,16 @@
 
 .quote {
   font-size: x-large;
-  height: 80%;
+  height: 70%;
   overflow-y: scroll;
   scrollbar-color: #e0bb3f transparent;
+  color: #e0bb3f;
 }
 
 .quote-ref {
   text-decoration: none;
-  color: #e0bb3f;
-  font-size: large;
+  color: #ae8b19;
+  font-size: larger;
   text-decoration: underline;
 }
 

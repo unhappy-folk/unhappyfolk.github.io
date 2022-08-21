@@ -14,6 +14,8 @@ function App() {
     <LanguageContext.Provider value={[language, setLanguage]}>
       <QuoteContext.Provider value={[quote, setQuote]}>
         <Home />
+        <br />
+
         <Footer />
       </QuoteContext.Provider>
     </LanguageContext.Provider>
