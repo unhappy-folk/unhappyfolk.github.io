@@ -44,7 +44,7 @@ function Home() {
           </p>
         </div>
       </div>
-      <Quote />
+      {/* <Quote /> */}
     </div>
   );
 }
