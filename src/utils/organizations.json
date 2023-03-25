@@ -1,0 +1,41 @@
+[
+    {
+        "name" : "Quran",
+        "github" : "https://github.com/quran",
+        "donation" : "https://donate.quran.com/?showDonationPopup",
+        "socialLinks" : {
+            "website": "https://quran.com/"
+        },
+        "about" : {
+            "ar": "منصة للقرآن الكريم بلغات عدة ، ويمكن للمستخدم أن يستمع له بأصواتٍ لقُرّاء كُثُر.",
+            "en": "A platform for reading the Qur'an in many languages and lestining to its recitation with many reciters."
+        }
+    },
+    {
+        "name" : "Sunnah",
+        "github" : "https://github.com/sunnah-com",
+        "donation" : "https://sunnah.com/support",
+        "socialLinks" : {
+            "website": "https://sunnah.com/",
+            "facebook": "https://www.facebook.com/officialsunnahcom",
+            "instagram": "https://www.instagram.com/_sunnahcom/",
+            "twitter": "https://twitter.com/SunnahCom"
+        },
+        "about" : {
+            "ar": "منصة لاشهر كتب الحديث الموجودة في التراث الإسلامي بلغاتٍ عديدة .",
+            "en": "A platform for the most famous Hadith books in Islamic history in many languages."
+        }
+    },
+    {
+        "name" : "Nuqayah",
+        "github" : "https://github.com/nuqayah/deen-projects/issues",
+        "donation" : "https://nuqayah.com/#donate",
+        "socialLinks" : {
+            "website": "https://nuqayah.com/"
+        },
+        "about" : {
+            "ar": " منصة قامت بتنفيذ العديد من المشاريع الدينية النافعة للمسلمين كافة كالباحث القرآني والباحث الحديثي .",
+            "en": "A platform that implemented alot of useful projects for Muslims such as Quranic researcher and Hadith researcher."
+        }
+    }
+]
