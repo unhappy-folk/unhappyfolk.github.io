@@ -4,7 +4,6 @@ function Footer(props) {
   return (
     <div
       style={{
-        position: "absolute",
         bottom: 0,
         left: 0,
         width: "100%",
@@ -13,7 +12,7 @@ function Footer(props) {
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "#110c11",
-        height: "16%",
+        height: "16%"
       }}
     >
       <ReachUs />
