@@ -1,7 +1,7 @@
 .language-btn {
   background-color: transparent;
   border-color: transparent;
-  color: #ae8b19;
+  color: #fbbf24;
   transition: 0.3s;
   padding: 0.3rem;
   font-size: large;
@@ -14,7 +14,7 @@
 .active-language-btn {
   background-color: #2c2b2b;
   border-color: transparent;
-  color: #ae8b19;
+  color: #fbbf24;
   transition: 0.3s;
   padding: 0.3rem;
   font-size: large;

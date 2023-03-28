@@ -8,25 +8,37 @@ html,
 body {
   padding: 0;
   margin: 0;
-  position: "relative",
+  position: "relative";
+  overflow-y: scroll;
+  background-color: #1c1917; /*stone-900*/
+}
+
+.no-scroll-bar {
+  -ms-overflow-style: none !important; /* IE and Edge */
+  scrollbar-width: none !important; /* Firefox */
+}
+
+.no-scroll-bar::-webkit-scrollbar {
+  display: none !important;
+  width: 0;
+  height: 0;
 }
 
 #root {
-  background-color: #070503;
+  background-color: #1c1917; /*stone-900*/
   font-family: "ArabicType", "Cormorant Garamond", cursive;
   height: 100vh;
+  height: 100%;
   width: 100vw;
-  overflow-y: scroll;
 }
 
 a {
   /* text-decoration: none; */
-color: #e0bb3f;
+  color: #e0bb3f;
 }
 
-
 a:hover {
-  color: #ae8b19;
+  color: #fbbf24;
   transition: 0.3s;
 }
 
@@ -46,7 +58,7 @@ a:hover {
 .title {
   font-size: xx-large;
   font-weight: bolder;
-  color: #ae8b19;
+  color: #fbbf24;
 }
 
 .subtitle {
