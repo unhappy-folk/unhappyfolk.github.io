@@ -1,14 +1,14 @@
 //Import data fetchers
-import { getTopProjects } from '../../utils/DataFetchers';
+// import { getTopProjects } from '../../utils/DataFetchers';
 
 //Import from SWR
-import useSWR from 'swr';
+// import useSWR from 'swr';
 
 //Import context
 import { useContext } from "react";
 import { LanguageContext } from "../../Context";
 import ProjectPreview from '../ProjectPreview/ProjectPreview';
-import Loading from '../../utils/Loading';
+// import Loading from '../../utils/Loading';
 
 function OrganizationPreview({org}) {
     const [currentLanguage, setCurrentLanguage] = useContext(LanguageContext);
@@ -32,12 +32,16 @@ function OrganizationPreview({org}) {
                     </div>
                 </div>
                 <div className="flex justify-center items-center mb-3">
-                    <button className="m-1 sm:m-5 rounded-lg py-4 px-8 bg-black">
-                        <a href={org.github}>{currentLanguage === 'ar' ? 'ساهم بالمساعدة' : 'Contribute'}</a>
-                    </button>
-                    <button className="m-1 sm:m-5 rounded-lg py-4 px-8 bg-black">
-                        <a href={org.donation}>{currentLanguage === 'ar' ? 'تبرّع' : 'Donate'}</a>
-                    </button>
+                    <a href={org.github}>
+                        <button className="m-1 sm:m-5 rounded-lg py-4 px-8 bg-black hover:bg-[#facc15] hover:text-black border-2 border-black transition ease-in-out duration-300">
+                            {currentLanguage === 'ar' ? 'ساهم بالمساعدة' : 'Contribute'}
+                        </button>
+                    </a>
+                    <a href={org.donation}>
+                        <button className="m-1 sm:m-5 rounded-lg py-4 px-8 bg-black hover:bg-[#facc15] hover:text-black border-2 border-black transition ease-in-out duration-300">
+                            {currentLanguage === 'ar' ? 'تبرّع' : 'Donate'}
+                        </button>
+                    </a>
                 </div>
                 <br/>
                 {org.topProjects &&
