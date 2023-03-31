@@ -10,7 +10,42 @@
         "about" : {
             "ar": "منصة للقرآن الكريم بلغات عدة ، ويمكن للمستخدم أن يستمع له بأصواتٍ لقُرّاء كُثُر.",
             "en": "A platform for reading the Qur'an in many languages and lestining to its recitation with many reciters."
-        }
+        },
+        "topProjects" : [
+            {
+                "name" : "quran-ios",
+                "logo": "https://user-images.githubusercontent.com/5665498/147855777-fc7d645c-6522-4bb3-8886-32c9f90b20df.png",
+                "github": "https://github.com/quran/quran-ios",
+                "download": "https://apps.apple.com/app/id1118663303",
+                "visit" : null,
+                "about" : {
+                    "ar": "من صناع Quran.com يأتي تطبيق القرآن للأجهزة المحمولة، تطبيق للمصحف ذو صفحات جميلة خالٍ تماما من الاعلانات لقد أصبح من السهل قراءة القرآن بالشارع، وحفظه، والاستماع إلى قارئك المفضل.",
+                    "en": "From the makers of Quran.com comes Quran for iOS, a beautiful, and ad-free mushaf app. It’s now easier to read the Quran on the go, memorize it and listen to your favorite reciters."
+                }
+            },
+            {
+                "name" : "quran-android",
+                "logo": "https://avatars.githubusercontent.com/u/21640?v=4",
+                "github": "https://github.com/quran/quran_android",
+                "download": "https://play.google.com/store/apps/details?id=com.quran.labs.androidquran&pli=1",
+                "visit" : null,
+                "about" : {
+                    "ar" : "تطبيق قرآن للهواتف التي تعمل على أجهزة أندرويد.",
+                    "en" : "Quran for Android is a free Quran application for Android devices"
+                }
+            },
+            {
+                "name" : "quran.com-frontend-next",
+                "logo": "https://avatars.githubusercontent.com/u/21640?v=4",
+                "github": "https://github.com/quran/quran.com-frontend-next",
+                "download": null,
+                "visit" : "https://quran.com",
+                "about" : {
+                    "ar": "منصة للقرآن الكريم بلغات عدة ، ويمكن للمستخدم أن يستمع له بأصواتٍ لقُرّاء كُثُر.",
+                    "en": "A platform for reading the Qur'an in many languages and lestining to its recitation with many reciters."
+                }
+            }
+        ]
     },
     {
         "name" : "Sunnah",
@@ -26,7 +61,31 @@
         "about" : {
             "ar": "منصة لاشهر كتب الحديث الموجودة في التراث الإسلامي بلغاتٍ عديدة .",
             "en": "A platform for the most famous Hadith books in Islamic history in many languages."
-        }
+        },
+        "topProjects" : [
+            {
+                "name" : "api",
+                "logo": null,
+                "github": "https://github.com/sunnah-com/api",
+                "download": null,
+                "visit" : "https://sunnah.com/",
+                "about" : {
+                    "ar" : "الباك اند الخاص بموقع Sunnah.",
+                    "en" : "The backend for Sunnah website."
+                }
+            },
+            {
+                "name" : "website",
+                "logo": null,
+                "github": "https://github.com/sunnah-com/website",
+                "download": null,
+                "visit" : "https://sunnah.com/",
+                "about" : {
+                    "ar" : "الواجهة الخاصة بموقع Sunnah.",
+                    "en" : "The frontend for Sunnah website."
+                }
+            }
+        ]
     },
     {
         "name" : "Nuqayah",
