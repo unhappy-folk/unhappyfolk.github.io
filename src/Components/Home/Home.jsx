@@ -2,6 +2,10 @@ import logo from "../../assets/logo.svg";
 
 //Import another components
 import Quote from "../Quote/Quote";
+import OrganizationPreview from "../OrganizationPreview/OrganizationPreview";
+
+//Import Utils
+import orgs from '../../utils/organizations.json';
 
 function Home() {
   return (
@@ -34,7 +38,8 @@ function Home() {
         >
           <p className="title">The Unhappy Folk</p>
           <br />
-
+          <br />
+          <br />
           {/* <p className="subtitle">Timeless, Placeless.</p> */}
           <p className="subtitle">
             Our Latest Entry: &nbsp;
@@ -43,6 +48,9 @@ function Home() {
             </a>
           </p>
         </div>
+      {orgs.map((org) => {
+        return <OrganizationPreview org={org}/>
+      })}
       </div>
       {/* <Quote /> */}
     </div>
