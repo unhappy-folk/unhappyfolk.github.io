@@ -25,7 +25,7 @@
 
 .quote-ref {
   text-decoration: none;
-  color: #ae8b19;
+  color: #fbbf24;
   font-size: larger;
   text-decoration: underline;
 }
@@ -35,7 +35,7 @@
 }
 
 .quote-ref:hover {
-  color: #ae8b19;
+  color: #fbbf24;
 }
 
 .fade-in {
