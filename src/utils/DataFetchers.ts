@@ -7,7 +7,7 @@ import { Organization } from "../types";
 export async function getTopProjects (org: Organization) {
     
     const octokit = new Octokit({
-        auth: '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'
+        auth: process.env.ACCESS_TOKEN
     });
       
     const topProjects = await octokit.request('GET /orgs/{org}/repos?per_page=3', {
