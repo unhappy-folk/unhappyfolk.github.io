@@ -4,9 +4,8 @@ import logo from "../../assets/logo.svg";
 import Quote from "../Quote/Quote";
 import OrganizationPreview from "../OrganizationPreview/OrganizationPreview";
 
-//Import Utils
-import orgs from "../../utils/organizations.json";
 import Page from "../Page";
+import orgs from "../../Content/Projects/store";
 
 function Home() {
   return (
