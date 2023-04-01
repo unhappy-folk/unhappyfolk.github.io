@@ -30,7 +30,7 @@ function OrganizationPreview({ org }: { org: Organisation }) {
           </div>
           <div className="flex flex-col justify-center items-center mb-8">
             <div className={styles.typography.title}>
-              <a target="_blank" href={org.links.website}>
+              <a target="_blank" href={org.links.website} rel="noreferrer">
                 {t(org.name)}{" "}
                 <span className={styles.typography.glyph}>&#x2197;</span>
               </a>
@@ -46,8 +46,8 @@ function OrganizationPreview({ org }: { org: Organisation }) {
               {currentLanguage === "ar" ? "ساهم بالمساعدة" : "Contribute"}
             </button>
           </a> */}
-          <a target="_blank" href={org.links.donation}>
-            <button className="text-[#e0bb3f] m-1 sm:m-5 rounded-lg py-4 px-8 bg-black hover:bg-[#facc15] hover:text-black border-2 border-black transition ease-in-out duration-300">
+          <a target="_blank" href={org.links.donation} rel="noreferrer">
+            <button className="text-[#e0bb3f] text-2xl bg-black m-1 sm:m-5 rounded-lg py-10 px-20 hover:text-3xl hover:py-12 hover:px-24 ease-in-out duration-300">
               {currentLanguage === "ar" ? "تبرّع" : "Donate"}
             </button>
           </a>
