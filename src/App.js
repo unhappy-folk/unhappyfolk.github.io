@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "./App.css";
-import Home from "./Components/Home/Home";
 import { LanguageContext } from "./Context";
 import { QuoteContext } from "./Context";
 import { MESSAGES } from "./Content/Quotes/Schema";
-import Footer from "./Components/Footer/Footer";
 import { translate } from "./Content/Projects";
+import { RouterProvider } from "react-router-dom";
+import router from "./Routes";
 
 function App() {
   const [language, setLanguage] = useState("ar");
@@ -16,10 +16,7 @@ function App() {
   return (
     <LanguageContext.Provider value={[t, language, direction, setLanguage]}>
       <QuoteContext.Provider value={[quote, setQuote]}>
-        <Home />
-        <br />
-
-        <Footer />
+        <RouterProvider router={router} />
       </QuoteContext.Provider>
     </LanguageContext.Provider>
   );

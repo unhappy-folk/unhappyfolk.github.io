@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { styles } from "../../styles";
 import Card from "../Card";
 import Page from "../Page";
@@ -20,9 +21,13 @@ const Demo = () => (
       <p className={styles.typography.content} style={{ direction: "rtl" }}>
         مالي وللدنيا؟
       </p>
-      <a className={styles.typography.url} href="https://blog.unhappyfolk.org">
+      <Link
+        className={styles.typography.url}
+        target="_blank"
+        to="/projects/quran"
+      >
         https://blog.unhappyfolk.org
-      </a>
+      </Link>
     </Card>
 
     <Card title="Hello World">
