@@ -26,7 +26,7 @@ body {
 
 #root {
   background-color: #1c1917; /*stone-900*/
-  font-family: "ArabicType", "Cormorant Garamond", cursive;
+  font-family: "Cormorant Garamond", "ArabicType", cursive;
   height: 100vh;
   height: 100%;
   width: 100vw;
