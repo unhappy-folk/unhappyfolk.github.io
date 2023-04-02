@@ -1,5 +1,5 @@
-//Import context
 import { useContext } from "react";
+import copy from "../../Content/Copy";
 import { Project } from "../../Content/Projects/model";
 import { LanguageContext } from "../../Context";
 import { styles } from "../../styles";
@@ -29,7 +29,7 @@ function ProjectPreview({ project }: { project: Project }) {
         {project.links.github && (
           <a target="_blank" href={project.links.github} rel="noreferrer">
             <button className="bg-white subpixel-antialiased text-[#e0bb3f] border-2 border-gray-200 text-xl font-weight-2 py-2 px-4 hover:py-3 hover:px-4 ease-in-out duration-300 rounded-md mt-2">
-              Contribute
+              {t(copy.buttons.contribute)}
             </button>
           </a>
         )}

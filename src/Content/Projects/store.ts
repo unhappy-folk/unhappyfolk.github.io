@@ -96,8 +96,8 @@ const orgs: Organisation[] = [
   {
     name: { en: "Nuqayah", ar: "نُقاية" },
     about: {
-      ar: "أنفع التطبيقات والمواقع لكل مسلم",
-      en: "Most useful apps and websites for every Muslim",
+      ar: "أنفع التطبيقات والمواقع لكل مسلم.",
+      en: "Most useful apps and websites for every Muslim.",
     },
     logo: "https://nuqayah.com/assets/nuqayah.svg",
     links: {

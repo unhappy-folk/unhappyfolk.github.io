@@ -4,8 +4,8 @@
 //Import from SWR
 // import useSWR from 'swr';
 
-//Import context
 import { useContext } from "react";
+import copy from "../../Content/Copy";
 import { Organisation } from "../../Content/Projects/model";
 import { LanguageContext } from "../../Context";
 import { styles } from "../../styles";
@@ -51,7 +51,7 @@ function OrganizationPreview({ org }: { org: Organisation }) {
             href={org.links.donation}
             className="text-[#e0bb3f] text-3xl bg-black m-1 sm:m-5 rounded-lg py-3 px-6 hover:text-4xl hover:py-2 hover:px-4 ease-in-out duration-300"
           >
-            {currentLanguage === "ar" ? "تبرّع" : "Donate"}
+            {t(copy.buttons.donate)}
           </a>
         </div>
         <br />
@@ -59,9 +59,7 @@ function OrganizationPreview({ org }: { org: Organisation }) {
           <div>
             <div className="mx-auto mb-4">
               <p className="text-black text-center text-4xl font-extrabold">
-                {currentLanguage === "ar"
-                  ? "أبرز المشاريع"
-                  : "Open Source Projects"}
+                {t(copy.text.projectsHeader)}
               </p>
             </div>
             <div className="lg:flex lg:flex-row lg:justify-around lg:items-start lg:flex-wrap">
