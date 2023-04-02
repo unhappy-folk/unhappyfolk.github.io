@@ -13,7 +13,7 @@ const orgs: Organisation[] = [
       website: "https://quran.com/",
     },
     about: {
-      ar: "منصة للقرآن الكريم بلغات عدة ، ويمكن للمستخدم أن يستمع له بأصواتٍ لقُرّاء كُثُر.",
+      ar: "منصة للقرآن الكريم بلغات عدة ، ويمكن للمستخدم أن يستمع له بأصواتٍ لقُرّاء كُثُر",
       en: "Quran.com was founded in 1995. The website aims to make it easy for anyone to read, study, and learn the Quran.",
     },
     projects: [
@@ -36,8 +36,8 @@ const orgs: Organisation[] = [
           github: "https://github.com/quran/quran-ios",
         },
         about: {
-          ar: "لقد أصبح من السهل قراءة القرآن بالشارع، وحفظه، والاستماع إلى قارئك المفضل.",
-          en: "Read the Quran on the go, memorize it and listen to your favorite reciters.",
+          ar: "لقد أصبح من السهل قراءة القرآن بالشارع، وحفظه، والاستماع إلى قارئك المفضل",
+          en: "Read the Quran on the go, memorize it and listen to your favorite reciters",
         },
       },
       {
@@ -45,6 +45,9 @@ const orgs: Organisation[] = [
         links: {
           github: "https://github.com/quran/quran.com-frontend-next",
           website: "https://quran.com",
+        },
+        about: {
+          en: "Read, study, and learn the Quran",
         },
       },
       {
@@ -67,7 +70,7 @@ const orgs: Organisation[] = [
       website: "https://sunnah.com/",
     },
     about: {
-      ar: "منصة لاشهر كتب الحديث الموجودة في التراث الإسلامي بلغاتٍ عديدة .",
+      ar: "منصة لاشهر كتب الحديث الموجودة في التراث الإسلامي بلغاتٍ عديدة ",
       en: "Our goal is to make authentic, comprehensive, and beneficial information pertaining to the sunnah of the Prophet Muhammad (saws) accessible to as many people around the world as possible in order to facilitate research and promote its mainstream and broadly accepted understanding.",
     },
     projects: [
@@ -93,7 +96,8 @@ const orgs: Organisation[] = [
   {
     name: { en: "Nuqayah", ar: "نُقاية" },
     about: {
-      ar: "أنفع التطبيقات والمواقع لكل مسلم.",
+      ar: "أنفع التطبيقات والمواقع لكل مسلم",
+      en: "Most useful apps and websites for every Muslim",
     },
     logo: "https://nuqayah.com/assets/nuqayah.svg",
     links: {
