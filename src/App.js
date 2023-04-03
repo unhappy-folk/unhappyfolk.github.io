@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./App.css";
-import Home from "./Components/Home/Home";
 import { LanguageContext } from "./Context";
 import { QuoteContext } from "./Context";
 import { MESSAGES } from "./Content/Quotes/Schema";

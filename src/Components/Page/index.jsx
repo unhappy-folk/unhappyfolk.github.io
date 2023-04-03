@@ -9,7 +9,7 @@ const Page = ({ children }) => {
         <img
           src={logo}
           alt="logo"
-          className="mx-auto object-contain w-2/12 h-3/12 md:w-1/6 mb-2"
+          className="mx-auto object-contain w-2/12 h-3/12 md:w-1/6 my-2"
         />
 
         <div className="no-scroll-bar p-2">

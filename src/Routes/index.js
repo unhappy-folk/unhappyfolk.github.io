@@ -1,23 +1,20 @@
 import { createBrowserRouter } from "react-router-dom";
-import Demo from "../Components/DemoPage";
 import Home from "../Components/Home/Home";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Demo />,
+    element: <Home />,
   },
   {
-    path: "projects",
-    element: <Demo />,
+    // placeholder
+    path: "contribute",
+    element: <Home />,
   },
   {
-    path: "projects/:org",
-    element: <Demo />,
-  },
-  {
-    path: "projects/:org/:project",
-    element: <Demo />,
+    // typical path would be similar to: `contribute/quran?project=quran_android
+    path: "contribute/:org",
+    element: <Home />,
   },
 ]);
 
