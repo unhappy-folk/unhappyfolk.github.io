@@ -3,12 +3,22 @@ type Translated = {
   en?: string;
 };
 
+type Classification = {
+  class1?: string[];
+  class2?: string[];
+  class3?: string[];
+  ignored?: string[];
+};
+
 type Project = {
   name: Translated;
   about?: Translated;
   links: {
     github: string;
     website?: string;
+  };
+  contribution?: {
+    classification?: Classification;
   };
 };
 

@@ -1,5 +1,5 @@
+import { Issue } from "../Content/Projects/model";
 import { and, not, Predicate } from "./predicates";
-import { Issue } from "../repo";
 
 const classes = {
   level1: ["good first issue", "documentation"],

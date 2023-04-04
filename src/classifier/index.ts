@@ -1,4 +1,4 @@
-import { Issue } from "../repo";
+import { Issue } from "../Content/Projects/model";
 import { ghClass1, ghClass2, ghClass3 } from "./github";
 import { and, or, not, Predicate } from "./predicates";
 
