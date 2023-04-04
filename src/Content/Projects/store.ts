@@ -28,6 +28,14 @@ const orgs: Organisation[] = [
             "https://play.google.com/store/apps/details?id=com.quran.labs.androidquran&pli=1",
           github: "https://github.com/quran/quran_android",
         },
+        contribution: {
+          classification: {
+            class1: ["Data", "minor", "dependencies"],
+            class2: ["improvement", "major"],
+            class3: ["suggestions", "new feature"],
+            ignored: ["inquiry", "suggestions", "in progress"],
+          },
+        },
       },
       {
         name: { ar: "قرآن للأيفون", en: "Quran for iOS" },
