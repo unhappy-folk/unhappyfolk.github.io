@@ -18,6 +18,11 @@ type Project = {
     website?: string;
   };
   contribution?: {
+    authorGuide?: string;
+    github?: {
+      org: string;
+      repo: string;
+    };
     classification?: Classification;
   };
 };
@@ -37,6 +42,6 @@ type Organisation = {
 };
 
 type Label = { name: string };
-type Issue = { name: string; labels: Label[] };
+type Issue = { name: string; body: string; html_url: string; labels: Label[] };
 
 export { Translated, Project, Organisation, Label, Issue };
