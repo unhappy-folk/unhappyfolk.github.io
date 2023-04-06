@@ -1,11 +1,16 @@
-import { Issue } from "../Content/Projects/model";
-import { and, not, Predicate } from "./predicates";
+import { Classification, Issue, Label } from "../Content/Projects/model";
+import { and, not, or, Predicate } from "./predicates";
 
-const classes = {
-  level1: ["good first issue", "documentation"],
-  level2: ["bug"],
-  level3: ["enhancement", "help wanted"],
-  ignored: ["duplicate", "invalid", "question", "wontfix"],
+const GITHUB_CLASSES: Classification = {
+  class1: [{ name: "good first issue" }, { name: "documentation" }],
+  class2: [{ name: "bug" }],
+  class3: [{ name: "enhancement" }, { name: "help wanted" }],
+  ignored: [
+    { name: "duplicate" },
+    { name: "invalid" },
+    { name: "question" },
+    { name: "wontfix" },
+  ],
 };
 
 /**
@@ -13,8 +18,12 @@ const classes = {
  * @param classLabels
  * @returns `true` if this __any__ of this issue's labels exist in `classLabels`
  */
-const labelInClassPredicate = (classLabels: string[]) => (issue: Issue) =>
-  issue.labels.reduce((acc, it) => acc || classLabels.includes(it.name), false);
+const labelInClassPredicate = (classLabels: Label[]) => (issue: Issue) =>
+  issue.labels.reduce(
+    (acc, it) =>
+      acc || classLabels.find((lbl) => it.name == lbl.name) != undefined,
+    false
+  );
 
 /**
  *
@@ -27,33 +36,22 @@ const labeledIssuePredicate: Predicate<Issue> = (issue: Issue) =>
 /**
  * @returns `true` if this __none__ of this issue's labels exist in `classLabels`
  */
-const excludedLabelsPredicate = (classLabels: string[]) =>
+const excludedLabelsPredicate = (classLabels: Label[]) =>
   not(labelInClassPredicate(classLabels));
 
 const activeIssuesPredicate = and(labeledIssuePredicate)(
-  excludedLabelsPredicate(classes.ignored)
+  excludedLabelsPredicate(GITHUB_CLASSES.ignored)
 );
 
-const goodFirstPredicate = and(activeIssuesPredicate)(
-  (issue: Issue) =>
-    issue.labels.filter((label) => label.name == "good first issue").length > 0
-);
-
-const ghClass1 = and(activeIssuesPredicate)(
-  labelInClassPredicate(classes.level1)
-);
-const ghClass2 = and(activeIssuesPredicate)(
-  labelInClassPredicate(classes.level2)
-);
-const ghClass3 = and(activeIssuesPredicate)(
-  labelInClassPredicate(classes.level3)
-);
+const ghClass1Predicate = labelInClassPredicate(GITHUB_CLASSES.class1);
+const ghClass2Predicate = labelInClassPredicate(GITHUB_CLASSES.class2);
+const ghClass3Predicate = labelInClassPredicate(GITHUB_CLASSES.class3);
 
 export {
   labelInClassPredicate,
   excludedLabelsPredicate,
   activeIssuesPredicate,
-  ghClass1,
-  ghClass2,
-  ghClass3,
+  ghClass1Predicate,
+  ghClass2Predicate,
+  ghClass3Predicate,
 };

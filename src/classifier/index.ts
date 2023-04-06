@@ -1,75 +1,40 @@
-import { Issue } from "../Content/Projects/model";
-import { ghClass1, ghClass2, ghClass3 } from "./github";
+import {
+  Classification,
+  ClassifiedIssues,
+  Issue,
+  Label,
+} from "../Content/Projects/model";
+import {
+  activeIssuesPredicate,
+  ghClass1Predicate,
+  ghClass2Predicate,
+  ghClass3Predicate,
+  labelInClassPredicate,
+} from "./github";
 import { and, or, not, Predicate } from "./predicates";
 
-const issues: Issue[] = [
-  {
-    name: "Issue1",
-    body: "",
-    html_url: "",
-    labels: [
-      {
-        name: "hamada",
-      },
-      {
-        name: "documentation",
-      },
-    ],
-  },
-  {
-    name: "Issue2",
-    body: "",
-    html_url: "",
-    labels: [],
-  },
-  {
-    name: "Issue3",
-    body: "",
-    html_url: "",
-    labels: [
-      {
-        name: "good first issue",
-      },
-    ],
-  },
-  {
-    name: "Issue3 Duplicate",
-    body: "",
-    html_url: "",
-    labels: [
-      {
-        name: "good first issue",
-      },
-      {
-        name: "duplicate",
-      },
-    ],
-  },
-  {
-    name: "Issue4",
-    body: "",
-    html_url: "",
-    labels: [
-      {
-        name: "bug",
-      },
-    ],
-  },
-  {
-    name: "Issue5",
-    body: "",
-    html_url: "",
-    labels: [
-      {
-        name: "enhancement",
-      },
-      {
-        name: "help wanted",
-      },
-    ],
-  },
-];
+const ignoreLabels = (labels: Label[]) => (issue: Issue) =>
+  not(labelInClassPredicate(labels))(issue);
 
-console.log(issues.filter((it) => ghClass1(it)));
-console.log(issues.filter((it) => ghClass2(it)));
-console.log(issues.filter((it) => ghClass3(it)));
+const classify = (
+  issues: Issue[],
+  classification: Classification
+): ClassifiedIssues => {
+  const activeIssues = issues.filter(
+    and(activeIssuesPredicate)(ignoreLabels(classification.ignored))
+  );
+
+  return {
+    class1: activeIssues.filter(
+      or(ghClass1Predicate)(labelInClassPredicate(classification.class1))
+    ),
+    class2: activeIssues.filter(
+      or(ghClass2Predicate)(labelInClassPredicate(classification.class2))
+    ),
+    class3: activeIssues.filter(
+      or(ghClass3Predicate)(labelInClassPredicate(classification.class3))
+    ),
+  };
+};
+
+export { classify };
