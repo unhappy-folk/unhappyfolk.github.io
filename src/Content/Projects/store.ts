@@ -28,6 +28,22 @@ const orgs: Organisation[] = [
             "https://play.google.com/store/apps/details?id=com.quran.labs.androidquran&pli=1",
           github: "https://github.com/quran/quran_android",
         },
+        contribution: {
+          classification: {
+            class1: [
+              { name: "data" },
+              { name: "minor" },
+              { name: "dependencies" },
+            ],
+            class2: [{ name: "improvement" }, { name: "major" }],
+            class3: [{ name: "suggestions" }, { name: "new feature" }],
+            ignored: [
+              { name: "inquiry" },
+              { name: "suggestions" },
+              { name: "in progress" },
+            ],
+          },
+        },
       },
       {
         name: { ar: "قرآن للأيفون", en: "Quran for iOS" },
@@ -47,7 +63,7 @@ const orgs: Organisation[] = [
           website: "https://quran.com",
         },
         about: {
-          en: "Read, study, and learn the Quran",
+          en: "Next.js Frontend. Read, study, and learn the Quran",
         },
       },
       {
