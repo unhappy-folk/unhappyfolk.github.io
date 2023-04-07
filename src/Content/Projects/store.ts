@@ -30,10 +30,18 @@ const orgs: Organisation[] = [
         },
         contribution: {
           classification: {
-            class1: ["Data", "minor", "dependencies"],
-            class2: ["improvement", "major"],
-            class3: ["suggestions", "new feature"],
-            ignored: ["inquiry", "suggestions", "in progress"],
+            class1: [
+              { name: "data" },
+              { name: "minor" },
+              { name: "dependencies" },
+            ],
+            class2: [{ name: "improvement" }, { name: "major" }],
+            class3: [{ name: "suggestions" }, { name: "new feature" }],
+            ignored: [
+              { name: "inquiry" },
+              { name: "suggestions" },
+              { name: "in progress" },
+            ],
           },
         },
       },
@@ -55,7 +63,7 @@ const orgs: Organisation[] = [
           website: "https://quran.com",
         },
         about: {
-          en: "Read, study, and learn the Quran",
+          en: "Next.js Frontend. Read, study, and learn the Quran",
         },
       },
       {
