@@ -4,6 +4,7 @@
 //Import from SWR
 // import useSWR from 'swr';
 
+import React from "react";
 import { useContext } from "react";
 import copy from "../../Content/Copy";
 import { Organisation } from "../../Content/Projects/model";
@@ -29,7 +30,7 @@ function OrganizationPreview({ org }: { org: Organisation }) {
           <div className="mx-auto flex justify-center  items-center w-32 h-32 mx-4 flex-grow-0 flex-shrink-0 lg:self-start">
             <img className="mb-6" src={org.logo} alt={`${t(org.name)} logo`} />
           </div>
-          <div className="w-full flex flex-col justify-center items-center lg:items-start mb-8">
+          <div className="w-full flex flex-col justify-center items-center lg:items-start gap-2 mb-8">
             <div className={`${styles.typography.title}`}>
               <a target="_blank" href={org.links.website}>
                 {t(org.name)}{" "}
@@ -54,14 +55,14 @@ function OrganizationPreview({ org }: { org: Organisation }) {
             {t(copy.buttons.donate)}
           </a>
         </div>
-        <br />
+        <hr />
         {org.projects && (
-          <div>
-            <div className="mx-auto mb-4">
-              <p className="text-black text-center text-4xl font-extrabold">
-                {t(copy.text.projectsHeader)}
-              </p>
-            </div>
+          <div className="my-4">
+            <p
+              className={`${styles.typography.header} mx-auto text-center mb-4`}
+            >
+              {t(copy.text.projectsHeader)}
+            </p>
             <div className="lg:flex lg:flex-row lg:justify-around lg:items-start lg:flex-wrap">
               {/* {isLoading && <Loading color='000000' isLoading={isLoading}/>} */}{" "}
               {/* In case that is being fethced through the API */}

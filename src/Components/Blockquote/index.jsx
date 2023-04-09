@@ -1,5 +1,5 @@
 const Blockquote = ({ children }) => (
-  <blockquote className="w-full p-1 ltr:border-r-4 rtl:border-l-4 border-[#e0bb3f] bg-stone-800 bg-opacity-10 rounded-md">
+  <blockquote className="w-full p-2 ltr:border-r-4 rtl:border-l-4 border-[#e0bb3f] bg-stone-800 bg-opacity-10 rounded-md">
     <svg
       aria-hidden="true"
       className="w-10 h-10 text-[#e0bb3f] rtl:-scale-x-100"
