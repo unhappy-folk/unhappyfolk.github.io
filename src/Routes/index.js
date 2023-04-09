@@ -12,8 +12,8 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    // typical path would be similar to: `contribute/quran?project=quran_android
-    path: "contribute/:org",
+    // a typical path would be similar to: `contribute/quran;quran_android
+    path: "contribute/:fullRepoName",
     element: <Home />,
   },
 ]);
