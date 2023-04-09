@@ -2,6 +2,53 @@ import { Organisation } from "./model";
 
 const orgs: Organisation[] = [
   {
+    name: { en: "Nuqayah", ar: "نُقاية" },
+    about: {
+      ar: "أنفع التطبيقات والمواقع لكل مسلم.",
+      en: "Most useful apps and websites for every Muslim.",
+    },
+    logo: "https://nuqayah.com/assets/nuqayah.svg",
+    links: {
+      github: "https://github.com/nuqayah/deen-projects/issues",
+      donation: "https://nuqayah.com/#donate",
+      website: "https://nuqayah.com/",
+      twitter: "https://twitter.com/nuqayah",
+      telegram: "https://t.me/nuqayah",
+    },
+    projects: [
+      {
+        name: { en: "Quranic Researcher", ar: "الباحث القرآني" },
+        about: {
+          ar: "الأول في تفسير القرآن وعلومه",
+        },
+        links: {
+          website: "https://tafsir.app",
+          github: "https://github.com/nuqayah/deen-projects/issues",
+        },
+      },
+      {
+        name: { en: "Hadith Researcher", ar: "الباحث الحديثي" },
+        about: {
+          ar: "بحث سريع في السنة",
+        },
+        links: {
+          website: "https://sunnah.one",
+          github: "https://github.com/nuqayah/deen-projects/issues",
+        },
+      },
+      {
+        name: { en: "Interactive Tafsir", ar: "التفسير التفاعلي" },
+        about: {
+          ar: "استمع إلى أربعة تفاسير",
+        },
+        links: {
+          website: "https://read.tafsir.one",
+          github: "https://github.com/nuqayah/deen-projects/issues",
+        },
+      },
+    ],
+  },
+  {
     name: {
       ar: "قرآن",
       en: "Quran",
@@ -105,53 +152,6 @@ const orgs: Organisation[] = [
         },
         about: {
           en: "The frontend for Sunnah website.",
-        },
-      },
-    ],
-  },
-  {
-    name: { en: "Nuqayah", ar: "نُقاية" },
-    about: {
-      ar: "أنفع التطبيقات والمواقع لكل مسلم.",
-      en: "Most useful apps and websites for every Muslim.",
-    },
-    logo: "https://nuqayah.com/assets/nuqayah.svg",
-    links: {
-      github: "https://github.com/nuqayah/deen-projects/issues",
-      donation: "https://nuqayah.com/#donate",
-      website: "https://nuqayah.com/",
-      twitter: "https://twitter.com/nuqayah",
-      telegram: "https://t.me/nuqayah",
-    },
-    projects: [
-      {
-        name: { en: "Quranic Researcher", ar: "الباحث القرآني" },
-        about: {
-          ar: "الأول في تفسير القرآن وعلومه",
-        },
-        links: {
-          website: "https://tafsir.app",
-          github: "https://github.com/nuqayah/deen-projects/issues",
-        },
-      },
-      {
-        name: { en: "Hadith Researcher", ar: "الباحث الحديثي" },
-        about: {
-          ar: "بحث سريع في السنة",
-        },
-        links: {
-          website: "https://sunnah.one",
-          github: "https://github.com/nuqayah/deen-projects/issues",
-        },
-      },
-      {
-        name: { en: "Interactive Tafsir", ar: "التفسير التفاعلي" },
-        about: {
-          ar: "استمع إلى أربعة تفاسير",
-        },
-        links: {
-          website: "https://read.tafsir.one",
-          github: "https://github.com/nuqayah/deen-projects/issues",
         },
       },
     ],
