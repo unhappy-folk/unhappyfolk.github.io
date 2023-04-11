@@ -28,12 +28,16 @@ function ProjectPreview({ project }: { project: Project }) {
             {t(project.about)}
           </p>
         )}
-        {project.links.github && (
-          <a target="_blank" href={project.links.github} rel="noreferrer">
-            <button className="bg-white subpixel-antialiased text-[#e0bb3f] border-2 border-gray-200 text-xl font-weight-2 py-2 px-4 hover:py-3 hover:px-4 ease-in-out duration-300 rounded-md mt-2">
+        {project.contribution && (
+          <Link
+            target="_blank"
+            to={`/contribute/${project.contribution.github.org};${project.contribution.github.repo}`}
+            rel="noreferrer"
+          >
+            <button className="bg-white subpixel-antialiased text-[#e0bb3f] text-xl font-weight-2 py-2 px-4 rounded-md mt-2 shadow-md hover:shadow-lg ease-in-out duration-300">
               {t(copy.buttons.contribute)}
             </button>
-          </a>
+          </Link>
         )}
       </div>
     </div>
