@@ -9,6 +9,7 @@ export const styles = {
     subheader: "text-2xl font-semi-bold subpixel-antialiased text-stone-800",
     content: "text-2xl subpixel-antialiased text-stone-600 text-justify",
     description: "text-xl subpixel-antialiased text-stone-600",
+    shadowed: "text-shadow-lg shadow-stone-400",
     url: "text-xl subpixel-antialiased text-amber-600 hover:underline hover:text-amber-600",
     glyph: "text-lg subpixel-antialiased",
     colors: {
