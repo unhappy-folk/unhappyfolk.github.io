@@ -16,7 +16,7 @@ function ProjectPreview({ project }: { project: Project }) {
       <div className="flex flex-col justify-center items-center">
         <a
           target="_blank"
-          className={`${styles.typography.subheader} `}
+          className={`${styles.typography.subheader}`}
           href={project.links.website ?? project.links.github}
         >
           {t(project.name)}

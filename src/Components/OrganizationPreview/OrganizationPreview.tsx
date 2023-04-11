@@ -33,8 +33,10 @@ function OrganizationPreview({ org }: { org: Organisation }) {
           <div className="w-full flex flex-col justify-center items-center lg:items-start gap-2 mb-8">
             <div className={`${styles.typography.title}`}>
               <a target="_blank" href={org.links.website}>
-                {t(org.name)}{" "}
-                <span className={styles.typography.glyph}>&#x2197;</span>
+                <p className={`${styles.typography.shadowed}`}>
+                  {t(org.name)}{" "}
+                  <span className={styles.typography.glyph}>&#x2197;</span>
+                </p>
               </a>
             </div>
             {org.about && (
@@ -50,7 +52,7 @@ function OrganizationPreview({ org }: { org: Organisation }) {
           <a
             target="_blank"
             href={org.links.donation}
-            className="text-[#e0bb3f] text-3xl bg-black m-1 sm:m-5 rounded-lg py-3 px-6 hover:text-4xl hover:py-2 hover:px-4 ease-in-out duration-300"
+            className="text-[#e0bb3f] text-3xl bg-stone-900 m-1 sm:m-5 rounded-lg py-3 px-6 shadow-md shadow-stone-400 hover:shadow-lg ease-in-out duration-300"
           >
             {t(copy.buttons.donate)}
           </a>
