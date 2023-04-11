@@ -21,7 +21,10 @@ const GITHUB_CLASSES: Classification = {
 const labelInClassPredicate = (classLabels: Label[]) => (issue: Issue) =>
   issue.labels.reduce(
     (acc, it) =>
-      acc || classLabels.find((lbl) => it.name == lbl.name) != undefined,
+      acc ||
+      classLabels.find(
+        (lbl) => it.name.toLowerCase() == lbl.name.toLowerCase()
+      ) != undefined,
     false
   );
 
