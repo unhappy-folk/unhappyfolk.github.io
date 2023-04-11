@@ -4,6 +4,7 @@ import copy from "../../Content/Copy";
 import { Project } from "../../Content/Projects/model";
 import { LanguageContext } from "../../Context";
 import { styles } from "../../styles";
+import { Link } from "react-router-dom";
 
 function ProjectPreview({ project }: { project: Project }) {
   const [t, , direction] = useContext(LanguageContext);

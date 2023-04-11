@@ -1,18 +1,15 @@
-//Import data fetchers
-// import { getTopProjects } from '../../utils/DataFetchers';
-
-//Import from SWR
 // import useSWR from 'swr';
 
 import React from "react";
 import { useContext } from "react";
 import copy from "../../Content/Copy";
-import { Organisation } from "../../Content/Projects/model";
 import { LanguageContext } from "../../Context";
 import { styles } from "../../styles";
 import Blockquote from "../Blockquote";
 import Card from "../Card";
 import ProjectPreview from "../ProjectPreview/ProjectPreview";
+import { Link } from "react-router-dom";
+import { Organisation } from "../../Content/Projects/model";
 // import Loading from '../../utils/Loading';
 
 function OrganizationPreview({ org }: { org: Organisation }) {
@@ -56,6 +53,17 @@ function OrganizationPreview({ org }: { org: Organisation }) {
           >
             {t(copy.buttons.donate)}
           </a>
+          {org.contribution && (
+            <Link
+              target="_blank"
+              to={`/contribute/${org.contribution.github.org};${org.contribution.github.repo}`}
+              rel="noreferrer"
+            >
+              <button className="text-[#e0bb3f] text-3xl bg-zinc-50 m-1 sm:m-5 rounded-lg py-3 px-6 shadow-md hover:shadow-lg ease-in-out duration-300">
+                {t(copy.buttons.contribute)}
+              </button>
+            </Link>
+          )}
         </div>
         <hr />
         {org.projects && (

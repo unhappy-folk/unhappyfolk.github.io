@@ -25,13 +25,11 @@ type Project = {
   };
   contribution?: {
     authorGuide?: string;
-    // TODO: make it non-null after population.
-    github?: {
+    github: {
       org: string;
       repo: string;
     };
-    // TODO: make it non-null after population.
-    classification?: Classification;
+    classification: Classification;
   };
 };
 
@@ -45,6 +43,15 @@ type Organisation = {
     donation: string;
     twitter?: string;
     telegram?: string;
+  };
+  // in case of an org that have a dedicated repo for all contributions (e.g. Nuqayah)
+  contribution?: {
+    authorGuide?: string;
+    github: {
+      org: string;
+      repo: string;
+    };
+    classification: Classification;
   };
   projects: Project[];
 };
