@@ -15,6 +15,19 @@ const orgs: Organisation[] = [
       twitter: "https://twitter.com/nuqayah",
       telegram: "https://t.me/nuqayah",
     },
+    contribution: {
+      github: {
+        org: "nuqayah",
+        repo: "deen-projects",
+      },
+      authorGuide: "https://t.me/nuqayah/142",
+      classification: {
+        class1: [{ name: "urgency: 3" }, { name: "priority: high" }],
+        class2: [{ name: "urgency: 2" }],
+        class3: [{ name: "urgency: 1" }],
+        ignored: [],
+      },
+    },
     projects: [
       {
         name: { en: "Quranic Researcher", ar: "الباحث القرآني" },
@@ -76,6 +89,10 @@ const orgs: Organisation[] = [
           github: "https://github.com/quran/quran_android",
         },
         contribution: {
+          github: {
+            org: "quran",
+            repo: "quran_android",
+          },
           classification: {
             class1: [
               { name: "data" },
@@ -102,6 +119,33 @@ const orgs: Organisation[] = [
           ar: "لقد أصبح من السهل قراءة القرآن بالشارع، وحفظه، والاستماع إلى قارئك المفضل",
           en: "Read the Quran on the go, memorize it and listen to your favorite reciters",
         },
+        contribution: {
+          github: {
+            org: "quran",
+            repo: "quran-ios",
+          },
+          classification: {
+            class1: [
+              { name: "Starter Task" },
+              { name: "P1" },
+              { name: "Code" },
+            ],
+            class2: [
+              { name: "feature" },
+              { name: "Quran.com" },
+              { name: "Settings" },
+              { name: "P2" },
+            ],
+            class3: [
+              { name: "Support Different Mushafs" },
+              { name: "users requested" },
+              { name: "P3" },
+              { name: "Advanced Audio Player" },
+              { name: "Social interaction" },
+            ],
+            ignored: [{ name: "Need More Info" }],
+          },
+        },
       },
       {
         name: { en: "Quran.com Website", ar: "موقع قرآن.كوم" },
@@ -112,6 +156,19 @@ const orgs: Organisation[] = [
         about: {
           en: "Next.js Frontend. Read, study, and learn the Quran",
         },
+        contribution: {
+          github: {
+            org: "quran",
+            repo: "quran.com-frontend-next",
+          },
+          classification: {
+            // most labels are GitHub's standard labels
+            class1: [{ name: "dependencies" }],
+            class2: [],
+            class3: [],
+            ignored: [],
+          },
+        },
       },
       {
         name: { en: "Quran.com API" },
@@ -120,6 +177,24 @@ const orgs: Organisation[] = [
         },
         links: {
           github: "https://github.com/quran/quran.com-api",
+        },
+        contribution: {
+          github: {
+            org: "quran",
+            repo: "quran.com-api",
+          },
+          classification: {
+            // most labels are GitHub's standard labels
+            class1: [
+              { name: "data" },
+              { name: "dependencies" },
+              { name: "translation error" },
+              { name: "quranenc-update" },
+            ],
+            class2: [{ name: "new recitation" }, { name: "segment" }],
+            class3: [{ name: "media" }, { name: "elasticsearch" }],
+            ignored: [{ name: "planned" }],
+          },
         },
       },
     ],
@@ -143,6 +218,19 @@ const orgs: Organisation[] = [
         links: {
           github: "https://github.com/sunnah-com/api",
         },
+        contribution: {
+          github: {
+            org: "sunnah-com",
+            repo: "api",
+          },
+          classification: {
+            class1: [{ name: "dependencies" }],
+            class2: [{ name: "Additional Feature" }],
+            // most labels are GitHub's standard labels
+            class3: [],
+            ignored: [],
+          },
+        },
       },
       {
         name: { en: "Sunnah Website" },
@@ -152,6 +240,19 @@ const orgs: Organisation[] = [
         },
         about: {
           en: "The frontend for Sunnah website.",
+        },
+        contribution: {
+          github: {
+            org: "sunnah-com",
+            repo: "website",
+          },
+          classification: {
+            // most labels are GitHub's standard labels
+            class1: [{ name: "dependencies" }],
+            class2: [],
+            class3: [],
+            ignored: [],
+          },
         },
       },
     ],
