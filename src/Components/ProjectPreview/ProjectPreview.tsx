@@ -11,7 +11,7 @@ function ProjectPreview({ project }: { project: Project }) {
 
   return (
     <div
-      className="bg-stone-800 bg-opacity-10 rounded-md lg:w-2/5 p-2 mb-4"
+      className="bg-stone-800 bg-opacity-10 rounded-md w-11/12 p-2 mb-4"
       dir={direction}
     >
       <div className="flex flex-col justify-center items-center">

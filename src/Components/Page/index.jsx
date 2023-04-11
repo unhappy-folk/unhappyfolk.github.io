@@ -5,7 +5,7 @@ import Footer from "../Footer/Footer";
 const Page = ({ children }) => {
   return (
     <>
-      <div className="mx-auto p-2 flex flex-col w-5/6-row md:w-4/6 md:max-w-[60vw]">
+      <div className="mx-auto md:p-2 flex flex-col w-11/12 md:w-5/6 lg:w-9/12 ease-in-out duration-700">
         <img
           src={logo}
           alt="logo"
