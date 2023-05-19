@@ -72,9 +72,8 @@ const Levels = memo(({ org, repo, languages, issues }) => {
 export const loader = async ({ params }) => {
   const [orgName, repoName] = params.fullRepoName.split(";");
   const org = orgs.find((it) => it.id == orgName);
-  const repo = org.projects.find(
-    (it) => it.contribution.github.repo == repoName
-  );
+  const repo =
+    org.projects.find((it) => it.contribution?.github.repo == repoName) || org; // for Nuqayah, since they have a dedicated repository for contribution
 
   return {
     org: {
