@@ -2,6 +2,7 @@ import { Organisation } from "./model";
 
 const orgs: Organisation[] = [
   {
+    id: "nuqayah",
     name: { en: "Nuqayah", ar: "نُقاية" },
     about: {
       ar: "أنفع التطبيقات والمواقع لكل مسلم.",
@@ -62,6 +63,7 @@ const orgs: Organisation[] = [
     ],
   },
   {
+    id: "quran",
     name: {
       ar: "قرآن",
       en: "Quran",
@@ -200,6 +202,7 @@ const orgs: Organisation[] = [
     ],
   },
   {
+    id: "sunnah-com",
     name: { en: "Sunnah", ar: "سُنَّة" },
     logo: "https://avatars.githubusercontent.com/u/23619131?s=200&v=4",
     links: {

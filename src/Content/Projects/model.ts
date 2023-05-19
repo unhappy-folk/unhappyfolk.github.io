@@ -34,6 +34,7 @@ type Project = {
 };
 
 type Organisation = {
+  id: string;
   name: Translated;
   logo: string;
   about?: Translated;

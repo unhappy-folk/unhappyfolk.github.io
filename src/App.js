@@ -82,7 +82,7 @@ const issues = [
 ];
 
 function App() {
-  const [language, setLanguage] = useState("ar");
+  const [language, setLanguage] = useState("en");
   const direction = language === "ar" ? "rtl" : "ltr";
   const [quote, setQuote] = useState(MESSAGES[1]);
   const t = (text) => translate(text, language);

@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../Components/Home/Home";
+import Contribute, { loader } from "../Components/Contribute";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,8 @@ const router = createBrowserRouter([
   {
     // a typical path would be similar to: `contribute/quran;quran_android
     path: "contribute/:fullRepoName",
-    element: <Home />,
+    element: <Contribute />,
+    loader: loader,
   },
 ]);
 
