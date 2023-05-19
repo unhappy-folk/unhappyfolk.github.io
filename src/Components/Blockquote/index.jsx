@@ -1,4 +1,6 @@
-const Blockquote = ({ children }) => (
+import { styles } from "../../styles";
+
+const Blockquote = ({ title = "", children }) => (
   <blockquote className="w-11/12 p-2 ltr:border-r-4 rtl:border-l-4 border-[#e0bb3f] bg-stone-800 bg-opacity-10 rounded-md">
     <svg
       aria-hidden="true"
@@ -12,6 +14,9 @@ const Blockquote = ({ children }) => (
         fill="currentColor"
       />
     </svg>
+    {title && (
+      <p className={`${styles.typography.subheader} capitalize`}>{title}</p>
+    )}
     {children}
   </blockquote>
 );
